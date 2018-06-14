@@ -37,7 +37,7 @@ RUN npm i puppeteer@^1.5.0
 RUN chown -R puppetuser:puppetuser /home/puppetuser \
     && chown -R puppetuser:puppetuser node_modules
 
-USER puppetuser
+#USER puppetuser
 # Run everything after as non-privileged user
 
 EXPOSE 3000
