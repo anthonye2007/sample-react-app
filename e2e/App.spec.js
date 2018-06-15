@@ -29,6 +29,6 @@ describe("App", () => {
 
     test("should display specific element", async () => {
         const buttonText = await page.$eval(".App-title", el => el.textContent);
-        expect(buttonText).toEqual("Welecome to React :)");
+        expect(buttonText).toEqual("Welcome to React");
     });
 });
