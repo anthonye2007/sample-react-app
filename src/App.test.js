@@ -11,5 +11,5 @@ test('renders without crashing', () => {
 
 test('renders specific element', () => {
     let wrapper = shallow(<App />);
-    expect(wrapper.find('.App-title').text()).toEqual('Welcome to React :^)');
+    expect(wrapper.find('.App-title').text()).toEqual('Welcome to React');
 });
