@@ -2,6 +2,14 @@
   "name": "order-tablet",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "node scripts/start.js",
+    "start:ci": "node scripts/start.js --no-browser",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js --env=jsdom",
+    "test:ci": "node_modules/jest/bin/jest.js --env=jsdom",
+    "ci": "node scripts/ci.js"
+  },
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
@@ -43,14 +51,6 @@
     "webpack-dev-server": "2.9.4",
     "webpack-manifest-plugin": "1.3.2",
     "whatwg-fetch": "2.0.3"
-  },
-  "scripts": {
-    "start": "node scripts/start.js",
-    "start:ci": "node scripts/start.js --no-browser",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom",
-    "test:ci": "node_modules/jest/bin/jest.js --env=jsdom",
-    "ci": "node scripts/ci.js"
   },
   "jest": {
     "collectCoverageFrom": [
